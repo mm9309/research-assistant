@@ -134,11 +134,11 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── API SETUP ─────────────────────────────────────────
-API_KEY = st.secrets["ANTHROPIC_API_KEY"]
-
 @st.cache_resource
 def get_client():
-    return anthropic.Anthropic(api_key=API_KEY)
+    return anthropic.Anthropic(
+        api_key=st.secrets["ANTHROPIC_API_KEY"]
+    )
 
 client = get_client()
 
