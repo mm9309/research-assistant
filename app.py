@@ -134,7 +134,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── API SETUP ─────────────────────────────────────────
-API_KEY = "your-key-here"
+API_KEY = st.secrets["ANTHROPIC_API_KEY"]
 
 @st.cache_resource
 def get_client():
