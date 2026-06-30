@@ -1,0 +1,12 @@
+anthropic
+streamlit
+requests
+pandas
+openpyxl
+xlsxwriter
+python-docx
+scipy
+numpy
+matplotlib
+beautifulsoup4
+semanticscholar
